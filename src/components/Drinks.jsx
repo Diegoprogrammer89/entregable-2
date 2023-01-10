@@ -1,23 +1,27 @@
+import React from "react";
 
+const Drinks = ({ data }) => {
+	return (
+		<article>
+			<input type="text" />
 
-const Drinks = ({data}) => {
-    console.log(data);
-     return (
-        <article>
+			<div>
+				{data.drinks?.map((info) => (
+					<div className="container__card" key={info.idDrink}>
+						<div className="card">
+							<div>
+								<img src={info.strDrinkThumb} alt="" />
+							</div>
+							<div className="text">
+								<h3 className="name">{info.strDrink}</h3>
+								<p>{info.strInstructions}</p>
+							</div>
+						</div>
+					</div>
+				))}
+			</div>
+		</article>
+	);
+};
 
-            
-            <div>
-                <img src="" alt="" />
-            </div>
-            <div>
-                <h3>nombre:</h3>
-               
-
-            </div>
-
-        </article>
-     )
-}
-
-
-export default Drinks
+export default Drinks;

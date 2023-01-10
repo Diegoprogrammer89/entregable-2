@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    background-color: rgb(210, 128, 128);
+}
+
+.container__card{
+     width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+}
+.card {
+   width: 300px;
+   margin: 20px auto;
+   padding: 20px;
+   box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  
+  
+    
+}
+img{
+    max-width: 80%;
+    border-radius: 14px;
+    margin: 0 10%;
+}
+.name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.text{
+    padding-left: 10px;
+    padding-right: 10px ;
+    padding-bottom: 10px;
+}
