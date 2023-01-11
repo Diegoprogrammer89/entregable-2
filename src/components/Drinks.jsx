@@ -6,6 +6,12 @@ const Drinks = ({ data }) => {
 			<input type="text" />
 
 			<div>
+				<div className="container_image">
+					<div className="image image1"></div>
+					<div className="image image2"></div>
+					<div className="image image3"></div>
+				</div>
+
 				{data.drinks?.map((info) => (
 					<div className="container__card" key={info.idDrink}>
 						<div className="card">
