@@ -3,17 +3,19 @@ import React from "react";
 const Drinks = ({ data }) => {
 	return (
 		<article>
-			<input type="text" />
+			<input type="text" 
+			className=""
+			placeholder="Search Drink"
+			 />
 
-			<div>
-				<div className="container_image">
-					<div className="image image1"></div>
-					<div className="image image2"></div>
-					<div className="image image3"></div>
-				</div>
-
+			<div className="container_image">
+				<div className="image image1"></div>
+				<div className="image image2"></div>
+				<div className="image image3"></div>
+			</div>
+			<div className="container__card">
 				{data.drinks?.map((info) => (
-					<div className="container__card" key={info.idDrink}>
+					<div key={info.idDrink}>
 						<div className="card">
 							<div>
 								<img src={info.strDrinkThumb} alt="" />
@@ -31,3 +33,9 @@ const Drinks = ({ data }) => {
 };
 
 export default Drinks;
+
+
+
+
+
+
