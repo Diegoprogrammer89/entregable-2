@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Drinks from "./components/Drinks";
 import React from "react";
-import { BiDrink } from "react-icons/bi";
+import { FaCocktail } from "react-icons/fa";
 import "animate.css"
 import Alert from "./components/Alert";
 
@@ -35,7 +35,7 @@ function App() {
 					placeholder="   Search Drink"
 				/>
 				<button className="btn">
-					<BiDrink className="icon animate__animated animate__rotateIn" />
+					<FaCocktail className="icon animate__animated animate__swing" />
 				</button>
 			</form>
 			{
