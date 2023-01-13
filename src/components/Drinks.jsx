@@ -23,7 +23,11 @@ const Drinks = ({ data }) => {
 								</div>
 								<div className="text">
 									<h3 className="name">{info.strDrink}</h3>
-									<p>{info.strInstructions}</p>
+									<div className="pText" >
+										<p >
+											{info.strInstructions}
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
