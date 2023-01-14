@@ -1,5 +1,4 @@
 import React from "react";
-import App from "../App";
 
 const Drinks = ({ data }) => {
 	return (
@@ -23,10 +22,8 @@ const Drinks = ({ data }) => {
 								</div>
 								<div className="text">
 									<h3 className="name">{info.strDrink}</h3>
-									<div className="pText" >
-										<p >
-											{info.strInstructions}
-										</p>
+									<div className="pText">
+										<p>{info.strInstructions}</p>
 									</div>
 								</div>
 							</div>

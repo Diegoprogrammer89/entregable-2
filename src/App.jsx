@@ -4,12 +4,12 @@ import axios from "axios";
 import Drinks from "./components/Drinks";
 import React from "react";
 import { FaCocktail } from "react-icons/fa";
-import "animate.css"
+import "animate.css";
 import Alert from "./components/Alert";
 
 function App() {
 	const [drinkData, setDrinkData] = useState([]); // guarda la info de la api
-	const [nameDrink, setNameDrink] = useState("");//  guarda el nombre recibido del input
+	const [nameDrink, setNameDrink] = useState(""); //  guarda el nombre recibido del input
 
 	useEffect(() => {
 		axios
@@ -25,7 +25,6 @@ function App() {
 		setNameDrink(e.target[0].value);
 	};
 
-
 	return (
 		<div className="App">
 			<form className="allInput" onSubmit={(e) => searchDrink(e)}>
@@ -38,19 +37,9 @@ function App() {
 					<FaCocktail className="icon animate__animated animate__swing" />
 				</button>
 			</form>
-			{
-		
-		drinkData
-		?
-			<Drinks data={drinkData} />
-			
-		
-		:
-		<Alert/>
-		}
+			{drinkData ? <Drinks data={drinkData} /> : <Alert />}
 		</div>
 	);
 }
 
 export default App;
-
